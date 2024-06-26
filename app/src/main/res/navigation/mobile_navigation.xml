@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress NavigationFile -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <!--suppress NavigationFile -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.nutrip_ahealthydietapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_daily_meal"
+        android:name="com.example.nutrip_ahealthydietapp.ui.dailymeal.DailyMealFragment"
+        android:label="@string/daily_meal"
+        tools:layout="@layout/daily_meal_fragment" />
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.example.nutrip_ahealthydietapp.ui.favourite.FavoriteFragment"
+        android:label="@string/favorites"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/nav_about_app"
+        android:name="com.example.nutrip_ahealthydietapp.AboutApp"
+        android:label="fragment_about_app"
+        tools:layout="@layout/fragment_about_app" />
+
+</navigation>

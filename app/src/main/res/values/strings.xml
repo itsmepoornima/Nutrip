@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Nutrip - a healthy diet app</string>
+    <string name="title_activity_main1">MainActivity1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="sign_in" />
+    <string name="sign_inn">Sign in</string>
+    <string name="welcome_home">welcome home</string>
+    <string name="daily_meal">daily meal</string>
+    <string name="favorite_items">Favorite items</string>
+    <string name="favorites">favorites</string>
+    <string name="settings">settings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_app">about app</string>
+    <string name="juices">Juices</string>
+    <string name="description">Description</string>
+    <string name="instructions">instructions</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/pale_green"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/meal_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="meal image"
+        android:src="@drawable/ragidosa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meal_name"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meal_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="ragi dosa"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meal_image" />
+
+    <TextView
+        android:id="@+id/meal_description"
+        android:layout_width="305dp"
+        android:layout_height="67dp"
+        android:layout_alignTop="@+id/meal_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="delicious ragi dosa with onions and chillies"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meal_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meal_description"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="Instructions:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meal_description"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <TextView
+        android:id="@+id/meal_instruction"
+        android:layout_width="133dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/meal_description"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:background="@color/pale_green"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="@string/instructions"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meal_description" />
+</androidx.constraintlayout.widget.ConstraintLayout>

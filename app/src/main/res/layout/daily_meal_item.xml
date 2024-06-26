@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:foreground="@drawable/daily_meal_darkbg"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/healthybreakfast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/breakfast"
+        android:layout_width="216dp"
+        android:layout_height="34dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="Healthy Breakfast"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="163dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="fast and healthy breakfast"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfast"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

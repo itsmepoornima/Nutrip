@@ -13,8 +13,8 @@
             android:icon="@drawable/baseline_fastfood_24"
             android:title="@string/daily_meal" />
         <item
-            android:id="@+id/nav_favorites"
-            android:icon="@android:drawable/ic_menu_mapmode"
+            android:id="@+id/nav_map"
+            android:icon="@android:drawable/ic_dialog_map"
             android:title="Maps" />
         <item
             android:id="@+id/nav_about_app"

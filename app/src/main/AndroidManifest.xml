@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Permission to read from external storage -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
-
-    <!-- Permission to write to external storage -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Permission to write to external storage -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" /> <!-- Permission to use the internet, if needed -->
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
-
-    <!-- Permission to use the internet, if needed -->
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
-
-
 
     <application
         android:allowBackup="true"
@@ -33,12 +34,25 @@
         android:theme="@style/Theme.NutripAHealthyDietApp"
         tools:targetApi="31">
         <activity
+            android:name=".calender"
+            android:exported="false"
+            android:label="@string/title_activity_calender"
+            android:theme="@style/Theme.NutripAHealthyDietApp.NoActionBar" />
+        <activity
+            android:name=".page1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".RecipeActivity"
             android:exported="false" />
         <activity
             android:name=".activities.MealItemsActivity"
             android:exported="false" />
-
         <activity
             android:name=".activities.register"
             android:exported="false" />
@@ -66,11 +80,17 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
+        </activity> <!-- <meta-data android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyCIeDi0tgIf9zcWHU-498fnWZEJnoIKreg" /> -->
         <meta-data
             android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+            android:resource="@array/preloaded_fonts" /> <!-- MapDemo Activity -->
+        <activity
+            android:name=".ui.map.mapFragment"
+            android:exported="false" /> <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAuJeQmg-2BHXDui1BGwIcKKjjO5SUJv7c" />
     </application>
 
 </manifest>

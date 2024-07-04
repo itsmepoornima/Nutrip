@@ -46,7 +46,11 @@ dependencies {
     implementation(libs.navigation.ui)
     implementation(libs.preference)
     implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("androidx.core:core-splashscreen:1.0.0")
+
 }

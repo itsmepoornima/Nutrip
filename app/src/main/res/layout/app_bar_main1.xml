@@ -22,13 +22,13 @@
 
     <include layout="@layout/content_main1" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="66dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="66dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_my_calendar" />-->
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

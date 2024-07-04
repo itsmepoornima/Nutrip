@@ -30,20 +30,20 @@ public class MainActivity1 extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain1.toolbar);
-        binding.appBarMain1.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "To do list", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null)
-                        .setAnchorView(R.id.fab).show();
-            }
-        });
+//        binding.appBarMain1.fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "To do list", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null)
+//                        .setAnchorView(R.id.fab).show();
+//            }
+//        });
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_daily_meal, R.id.nav_favorites, R.id.nav_about_app)
+                R.id.nav_home, R.id.nav_daily_meal, R.id.nav_map, R.id.nav_about_app)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main1);

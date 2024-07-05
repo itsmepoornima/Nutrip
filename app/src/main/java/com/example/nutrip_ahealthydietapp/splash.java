@@ -13,8 +13,12 @@ import androidx.appcompat.widget.AppCompatButton;
 import com.example.nutrip_ahealthydietapp.activities.MainActivity1;
 import com.example.nutrip_ahealthydietapp.activities.login;
 import com.example.nutrip_ahealthydietapp.activities.register;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class splash extends AppCompatActivity {
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,7 @@ public class splash extends AppCompatActivity {
         AppCompatButton reg_btn=findViewById(R.id.register_btn);
         TextView sign_up_txt=findViewById(R.id.sign_up_txt);
         ImageView guest_btn=findViewById(R.id.guest_btn);
+
 
         guest_btn.setOnClickListener(new View.OnClickListener() {
             @Override

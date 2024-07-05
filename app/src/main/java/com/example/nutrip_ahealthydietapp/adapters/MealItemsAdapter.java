@@ -84,12 +84,12 @@ public class MealItemsAdapter extends RecyclerView.Adapter<MealItemsAdapter.View
 
 
                 // Show toast message
-                if (isChecked) {
-                    Toast.makeText(context.getApplicationContext(), "Added to favorites: " + model.getName(), Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(context.getApplicationContext(), "Removed from favorites: " + model.getName(), Toast.LENGTH_SHORT).show();
-                }
+//                if (isChecked) {
+//                    Toast.makeText(context.getApplicationContext(), "Added to favorites: " + model.getName(), Toast.LENGTH_SHORT).show();
+//
+//                } else {
+//                    Toast.makeText(context.getApplicationContext(), "Removed from favorites: " + model.getName(), Toast.LENGTH_SHORT).show();
+//                }
             }
         });
     }

@@ -44,4 +44,5 @@ public class MealItemModel {
     public void setFavorite(boolean favorite) {
         isFavorite = favorite;
     }
+
 }

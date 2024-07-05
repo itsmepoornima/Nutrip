@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "999922007425",
+    "project_id": "nutrip---a-healthy-diet-app",
+    "storage_bucket": "nutrip---a-healthy-diet-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999922007425:android:03dc452486335591c33c80",
+        "android_client_info": {
+          "package_name": "com.example.nutrip_ahealthydietapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbuQ0V0WCG-kuFGZBT0zKnpmXiKHA9djE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

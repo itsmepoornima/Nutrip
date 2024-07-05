@@ -18,14 +18,26 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.nutrip_ahealthydietapp.activities.MainActivity1;
+import com.example.nutrip_ahealthydietapp.activities.login;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class page1 extends AppCompatActivity {
+    private FirebaseAuth auth;
 
     ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_page1);
+
+
+        auth = FirebaseAuth.getInstance();
+
+        // Check if user is logged in
+
 
         imageView = findViewById(R.id.logoing);
         Animation animation = AnimationUtils.loadAnimation(getApplicationContext(), zoom_animation);
